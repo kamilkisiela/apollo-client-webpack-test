@@ -48,7 +48,8 @@
 
 	var _apolloClient = __webpack_require__(1);
 
-	console.log('ApolloClient', _apolloClient.ApolloClient);
+	var networkInterface = (0, _apolloClient.createNetworkInterface)();
+	var client = new _apolloClient.ApolloClient({ networkInterface: networkInterface });
 
 /***/ },
 /* 1 */

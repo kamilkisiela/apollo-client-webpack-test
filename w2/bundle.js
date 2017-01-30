@@ -3657,7 +3657,7 @@ module.exports = g;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__errors_ApolloError__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ApolloClient__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__data_storeUtils__ = __webpack_require__(0);
-/* unused harmony reexport createNetworkInterface */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__transport_networkInterface__["a"]; });
 /* unused harmony reexport createBatchingNetworkInterface */
 /* unused harmony reexport createApolloStore */
 /* unused harmony reexport createApolloReducer */
@@ -3672,7 +3672,7 @@ module.exports = g;
 /* unused harmony reexport toIdValue */
 /* unused harmony reexport HTTPFetchNetworkInterface */
 /* unused harmony reexport ObservableQuery */
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_10__ApolloClient__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_10__ApolloClient__["a"]; });
 
 
 
@@ -6347,7 +6347,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_apollo_client__ = __webpack_require__(28);
 
 
-console.log('ApolloClient', __WEBPACK_IMPORTED_MODULE_0_apollo_client__["a" /* ApolloClient */]);
+const networkInterface = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_apollo_client__["a" /* createNetworkInterface */])();
+const client = new __WEBPACK_IMPORTED_MODULE_0_apollo_client__["b" /* ApolloClient */]({networkInterface});
+
 
 /***/ })
 /******/ ]);

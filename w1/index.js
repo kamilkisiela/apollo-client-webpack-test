@@ -1,3 +1,4 @@
-import { ApolloClient } from 'apollo-client';
+import { ApolloClient, createNetworkInterface } from 'apollo-client';
 
-console.log('ApolloClient', ApolloClient);
+const networkInterface = createNetworkInterface();
+const client = new ApolloClient({networkInterface});
